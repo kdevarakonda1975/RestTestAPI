@@ -1,9 +1,11 @@
 # RestTestAPI
 The code consists of 3 API testing using RestAssured. Primarily used the public APIs Country,Weather and Customer. 
 the below APIs are used for testing.
--[click here](http://services.groupkt.com/country/get/all)
--[click here](http://api.openweathermap.org/data/2.5/weather?q=Frisco,US&appid=9732a8a54f898ecaafd9c1e72f8b6e31)
--[click here](http://www.thomas-bayer.com/sqlrest/CUSTOMER/10)
+Country API -[click here] (http://services.groupkt.com/country/get/all)
+
+Weather API-[click here] (http://api.openweathermap.org/data/2.5/weather?q=Frisco,US&appid=9732a8a54f898ecaafd9c1e72f8b6e31)
+
+Customer API-[click here] (http://www.thomas-bayer.com/sqlrest/CUSTOMER/10)
 
 # Steps for executing
 1.	Download project source files from github

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="CountryApiTest">
+    <classes>
+      <class name="com.kamala.test.CountryApiTest"/>
+    </classes>
+  </test> <!-- CountryApiTest -->
+  <test name="WeatherApiTest">
+    <classes>
+      <class name="com.kamala.test.WeatherApiTest"/>
+    </classes>
+  </test> <!-- WeatherApiTest -->
+  <test name="CustomerApiTest">
+    <classes>
+      <class name="com.kamala.test.CustomerApiTest"/>
+    </classes>
+  </test> <!-- CustomerApiTest -->
+  <test name="CountryApiTest(failed)">
+    <classes>
+      <class name="com.kamala.test.CountryApiTest">
+        <methods>
+          <include name="testUK"/>
+        </methods>
+      </class> <!-- com.kamala.test.CountryApiTest -->
+    </classes>
+  </test> <!-- CountryApiTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

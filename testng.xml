@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+   <test name="CountryApiTest">
+  
+    <classes>
+      <class name="com.kamala.test.CountryApiTest"/>
+    </classes>
+  </test>
+
+  <test name="WeatherApiTest">
+  
+    <classes>
+      <class name="com.kamala.test.WeatherApiTest"/>
+    </classes>
+  </test>
+  <test name="CustomerApiTest">
+  
+    <classes>
+      <class name="com.kamala.test.CustomerApiTest"/>
+    </classes>
+  </test>
+     
+</suite> <!-- Suite -->

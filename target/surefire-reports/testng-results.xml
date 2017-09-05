@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="16" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15842" started-at="2017-09-05T21:05:30Z" finished-at="2017-09-05T21:05:46Z">
+    <groups>
+    </groups>
+    <test name="CountryApiTest" duration-ms="12043" started-at="2017-09-05T21:05:30Z" finished-at="2017-09-05T21:05:42Z">
+      <class name="com.kamala.test.CountryApiTest">
+        <test-method status="PASS" signature="checkLength()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="checkLength" duration-ms="3988" started-at="2017-09-05T16:05:30Z" finished-at="2017-09-05T16:05:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLength -->
+        <test-method status="PASS" signature="httpscodevalidation()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="httpscodevalidation" duration-ms="1136" started-at="2017-09-05T16:05:34Z" finished-at="2017-09-05T16:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- httpscodevalidation -->
+        <test-method status="PASS" signature="noMatchcountyFound()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="noMatchcountyFound" duration-ms="469" started-at="2017-09-05T16:05:35Z" finished-at="2017-09-05T16:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noMatchcountyFound -->
+        <test-method status="PASS" signature="parametersTest()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="parametersTest" duration-ms="1137" started-at="2017-09-05T16:05:36Z" finished-at="2017-09-05T16:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parametersTest -->
+        <test-method status="PASS" signature="restTest()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="restTest" duration-ms="889" started-at="2017-09-05T16:05:37Z" finished-at="2017-09-05T16:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restTest -->
+        <test-method status="PASS" signature="restTestall()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="restTestall" duration-ms="803" started-at="2017-09-05T16:05:38Z" finished-at="2017-09-05T16:05:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restTestall -->
+        <test-method status="PASS" signature="searchByState()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="searchByState" duration-ms="791" started-at="2017-09-05T16:05:39Z" finished-at="2017-09-05T16:05:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByState -->
+        <test-method status="PASS" signature="testISO()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="testISO" duration-ms="774" started-at="2017-09-05T16:05:39Z" finished-at="2017-09-05T16:05:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testISO -->
+        <test-method status="PASS" signature="testReturnCode()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="testReturnCode" duration-ms="753" started-at="2017-09-05T16:05:40Z" finished-at="2017-09-05T16:05:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReturnCode -->
+        <test-method status="FAIL" signature="testUK()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="testUK" duration-ms="454" started-at="2017-09-05T16:05:41Z" finished-at="2017-09-05T16:05:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path RestResponse.result[234].name doesn't match.
+Expected: United Kingdom of Great Britain
+  Actual: United Kingdom of Great Britain and Northern Ireland
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path RestResponse.result[234].name doesn't match.
+Expected: United Kingdom of Great Britain
+  Actual: United Kingdom of Great Britain and Northern Ireland
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+	at com.kamala.test.CountryApiTest.testUK(CountryApiTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUK -->
+        <test-method status="PASS" signature="testUSA()[pri:0, instance:com.kamala.test.CountryApiTest@1ab3a8c8]" name="testUSA" duration-ms="813" started-at="2017-09-05T16:05:41Z" finished-at="2017-09-05T16:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUSA -->
+      </class> <!-- com.kamala.test.CountryApiTest -->
+    </test> <!-- CountryApiTest -->
+    <test name="WeatherApiTest" duration-ms="2550" started-at="2017-09-05T21:05:42Z" finished-at="2017-09-05T21:05:45Z">
+      <class name="com.kamala.test.WeatherApiTest">
+        <test-method status="PASS" signature="checkDescription()[pri:0, instance:com.kamala.test.WeatherApiTest@6dc17b83]" name="checkDescription" duration-ms="1043" started-at="2017-09-05T16:05:42Z" finished-at="2017-09-05T16:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDescription -->
+        <test-method status="PASS" signature="checkMainSky()[pri:0, instance:com.kamala.test.WeatherApiTest@6dc17b83]" name="checkMainSky" duration-ms="421" started-at="2017-09-05T16:05:43Z" finished-at="2017-09-05T16:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMainSky -->
+        <test-method status="PASS" signature="checkStaus()[pri:0, instance:com.kamala.test.WeatherApiTest@6dc17b83]" name="checkStaus" duration-ms="642" started-at="2017-09-05T16:05:44Z" finished-at="2017-09-05T16:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStaus -->
+        <test-method status="PASS" signature="testAppISO()[pri:0, instance:com.kamala.test.WeatherApiTest@6dc17b83]" name="testAppISO" duration-ms="443" started-at="2017-09-05T16:05:44Z" finished-at="2017-09-05T16:05:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppISO -->
+      </class> <!-- com.kamala.test.WeatherApiTest -->
+    </test> <!-- WeatherApiTest -->
+    <test name="CustomerApiTest" duration-ms="1112" started-at="2017-09-05T21:05:45Z" finished-at="2017-09-05T21:05:46Z">
+      <class name="com.kamala.test.CustomerApiTest">
+        <test-method status="PASS" signature="xmlResponsesbody()[pri:0, instance:com.kamala.test.CustomerApiTest@6aba2b86]" name="xmlResponsesbody" duration-ms="1111" started-at="2017-09-05T16:05:45Z" finished-at="2017-09-05T16:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xmlResponsesbody -->
+      </class> <!-- com.kamala.test.CustomerApiTest -->
+    </test> <!-- CustomerApiTest -->
+  </suite> <!-- Suite -->
+</testng-results>
